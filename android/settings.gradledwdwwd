@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "dev.flutter.flutter-gradle-plugin") {
+                // Load plugin from Flutter SDK instead of Maven
+                def flutterSdkPath = settingsDir.toPath().resolve("..").resolve("..").resolve("..").toFile()
+                def pluginPath = new File(flutterSdkPath, "packages/flutter_tools/gradle")
+                useModule("dev.flutter:flutter-gradle-plugin:${requested.version}") {
+                    artifactFile = new File(pluginPath, "flutter-gradle-plugin-${requested.version}.jar")
+                }
+            }
+        }
+    }
+}
+
+plugins {
+    id "dev.flutter.flutter-gradle-plugin" version "1.0.0"
+}
+
+include(":app")

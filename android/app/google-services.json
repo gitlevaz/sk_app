@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "322886492403",
+    "project_id": "testmessages-1773b",
+    "storage_bucket": "testmessages-1773b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322886492403:android:a46eb7590a30f488a59786",
+        "android_client_info": {
+          "package_name": "com.example.march_1_firebase_messaging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_rm_PhBZFTy1pSJvd49I4u0amqkxtE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322886492403:android:9ac2d52d7d9dcd7aa59786",
+        "android_client_info": {
+          "package_name": "com.example.sahakaru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_rm_PhBZFTy1pSJvd49I4u0amqkxtE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
