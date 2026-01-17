@@ -1,10 +1,10 @@
 // lib/config/app_config.dart
 class AppConfig {
-  static const String baseUrl = "https://staging.sahakaru.com/api";
+  static const String baseUrl = "https://sahakaru.com/api";
 
   static const String login = "$baseUrl/mobilelogin";
 
- static const String imgpath = "https://staging.sahakaru.com//assets/images/user/profile/";
+ static const String imgpath = "https://sahakaru.com//assets/images/user/profile/";
  static const String dashboard = "$baseUrl/dashboard";
  static const String fetchMembers = "$baseUrl/members";
  static const String checkInterestStatus = "$baseUrl/check-interest";
@@ -12,7 +12,7 @@ class AppConfig {
  static const String viewContact2 = "$baseUrl/viewContact2";
  static const String interestLimit = "$baseUrl/interest-limit";
   static const String expressInterest = "$baseUrl/express-interest";
-  
+
     // static const String hideInterest = "$baseUrl/mobilelogin";
   static const String hideInterest = "$baseUrl/hide-interest";
   static const String foundInterests = "$baseUrl/found-interests";
@@ -32,6 +32,7 @@ class AppConfig {
   static const String fetchmessages = "$baseUrl/messages";  
   static const String sendInterest = "$baseUrl/send-message";  
   static const String updateProfile = "$baseUrl/update-profile";  
+  static const String packages = "$baseUrl/packages";  
   // static const String contact = "$baseUrl/contact";  
 
 

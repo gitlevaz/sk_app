@@ -114,7 +114,7 @@ class _HiddenInterestsScreenState extends State<HiddenInterestsScreen> {
 
     try {
       final response = await http.post(
-        Uri.parse("https://staging.sahakaru.com/api/hide-interest"),
+         Uri.parse("${AppConfig.hideInterest}"),
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',

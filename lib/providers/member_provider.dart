@@ -25,7 +25,7 @@ class MemberProvider with ChangeNotifier {
           'height': '${ageRange.start.toInt()} - ${ageRange.end.toInt()}',
       };
 
-      final uri = Uri.https('staging.sahakaru.com', '/api/members', queryParams);
+      final uri = Uri.https('sahakaru.com', '/api/members', queryParams);
 
        print(queryParams);
       print("API URL: $uri"); // Debugging

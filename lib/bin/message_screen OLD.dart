@@ -37,7 +37,7 @@
 //   Future<void> _fetchMessages() async {
 //     setState(() => _loading = true);
 //     final response = await http.post(
-//       Uri.parse("https://staging.sahakaru.com/api/messages"),
+//      Uri.parse("${AppConfig.sendInterest}"),
 //       headers: {"Accept": "application/json"},
 //       body: {
 //         "sender_id": widget.senderId.toString(),
@@ -70,7 +70,7 @@
    
 
 //     final response = await http.post(
-//       Uri.parse("https://staging.sahakaru.com/api/send-message"),
+//     Uri.parse("${AppConfig.sendInterest}"),
 //       headers: {"Accept": "application/json"},
 //       body: {
 //         "sender_id": userId, // your logged-in user

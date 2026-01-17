@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:sahakaru/config/app_config.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PurchaseScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ Future<void> _showPurchaseMessageAndRedirect() async {
   await Future.delayed(const Duration(seconds: 2));
 
   final Uri url =
-      Uri.parse("https://staging.sahakaru.com/packages");
+      Uri.parse("${AppConfig.packages}");
 
   if (await canLaunchUrl(url)) {
     await launchUrl(
